@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+}
+.header-img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+ul li {
+    list-style-type: none;
+    display: inline;
+}
+.header-link {
+    color: white;
+    text-decoration: none;
+    margin-right: .4rem;
+    transition: color .4s;
+}
+.header-link:hover {
+    color: green;
+}
+
+/* Main */
+main {
+    max-height: calc(100vh - 105px - 126px);
+    position: relative;
+}
+.main-img { /* CHANGE PICTURE */
+    width: 100%;
+    object-fit: cover;
+}
+.salt-logo {
+    position: absolute;
+    left: 0;
+    width: 180px;
+    object-fit: cover;
+}
+.game-info {
+    background: #1e1e21;
+    color: #8fa0c9;
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+.info {
+    margin: 0 1rem;
+    
+}
+.info h2, .buy-game h4 {
+    font-family: "Passion One", Helvetica, Arial, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+}
+.info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+}
+.para {
+    font-size: 1.2rem;
+}
+.fir {
+    margin-bottom: 1rem;
+}
+.buy-game {
+    background: black;
+    border-radius: 4px;
+    height: 390px;
+    color: white;
+    text-align: center;
+    padding: .5rem;
+}
+.buy-game > * {
+    margin: .3rem 0;
+}
+.buy-game h4 {
+    font-size: 1.2rem;
+}
+hr {
+    color: red;
+}
+.game-btn {
+    padding: .6rem;
+    width: 250px;
+    background: #353e8d;
+    cursor: pointer;
+    border-color: transparent;
+    border-radius: 3px;
+}
+.sounds {
+    background: #638ec2;
+}
+
+/* Image slides -- Main */
+
+.slides {
+    background: black;
+    padding: 2.3rem;
+}
+.images {
+    width: 100%;
+}
+
+/* Under slides -- Main */
+
+.world-item {
+    background: black;
+    padding: 1rem;
+}
+.items-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.items-info {
+    font-family: "Passion One";
+    text-align: center;
+    line-height: 1.5;
+}
+.items-info p {
+    font-size: 1.2rem;
+}
+
+/* Items in World -- Main */
+
+.items { /* FINISH THIS */
+    width: 100%;
+    background: #000;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 3rem;
+}
+.item-img {
+    width: 320px;
+}
+.grid {
+    text-align: center;
+    width: 320px;
+}
+.grid h4 {
+    margin-bottom: .6rem;
+    font-size: 1.1rem;
+}
+.grid p {
+    color: #9A9EAF;
+}
+
+/* Reviews -- Main */
+
+.reviews {
+    background: #150c35;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+    width: 100%;
+}
+.reviews p {
+    color: #a8c1ed;
+    line-height: 1.3;
+}
+.review {
+    border-radius: 50%;
+    width: 65px;
+}
+.reviewer {
+    margin-top: 1rem;
+}
+.reviewer h3 {
+    font-size: .9rem;
+}
+.reviewer h5 {
+    font-size: .2rem;
+    color: #7a7a7a;
+}
+
+/* Originals -- Main */
+
+.originals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: black;
+}
+.flex {
+    background: #2e2c35;
+    padding: 1.4rem;
+    margin: 1rem;
+    border-radius: 4px;
+    width: 400px;
+    text-align: center;
+}
+.original-imgs {
+    margin: 0 auto;
+}
+.merch-link, .platform-link {
+    text-align: center;
+    margin: 1rem 0;
+    color: white;
+    display: block;
+    text-decoration: unset;
+    padding: .5rem;
+    border-radius: 4px;
+}
+.platform-link {
+    background: #6c99d8;
+}
+.merch-link {
+    text-decoration: underline;
+    color: #6c99d8;
+    margin: .2rem;
+}
+
+/* Updates -- Main */
+
+.updates {
+    background: #242424;
+    padding: 2rem;
+    text-align: center;
+}
+.updates h4 {
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+.updates-p {
+    font-size: .8rem;
+    color: #ACACAC;
+}
+form {
+    display: flex;
+}
+.input {
+    width: 420px;
+    margin: 2rem auto;
+}
+.form {
+    padding: .8rem;
+    margin: 2rem auto;
+}
+.submit {
+    background: green;
+    color: white;
+    border-color: transparent;
+    transition: background .6s;
+    cursor: pointer;
+}
+.submit:hover {
+    color: green;
+    background: black;
+}
+
+/* Footer */
+
+footer {
+    background: black;
+    padding: 2rem;
+    text-align: center;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer-link {
+    color: white;
+    text-decoration: unset;
+    transition: color .4s;
+}
+.footer-link:hover {
+    color: green;
+}
+footer h6 {
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: #666;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 300px) {
+    .game-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .info {
+        margin-bottom: 4rem;
+    }
+    .items {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .reviews {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .review-list {
+        margin-bottom: 2rem;
+    }
+    .buy-game {
+        width: 320px;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 200px;
+    }
+    .input {
+        width: 280px;
+        justify-content: start;
+        display: flex;
+    }
+    .inputs {
+        width: 280px;
+        margin-bottom: 0;
+    }
+    .submit {
+        margin-top: 0;
+        width: 280px;
+    }
+    footer {
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .footer-list {
+        width: 320px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-link {
+        font-size: .75rem;
+    }
+}
+@media (min-width: 586px) {
+    .salt-logo {
+        width: 260px;
+    }
+    .buy-game {
+        width: 320px;
+    }
+    .footer-list {
+        width: 420px;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 785px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 921px) {
+    .originals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .buy-game {
+        width: 350px;
+    }
+    .items {
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 1176px) {
+    .items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
